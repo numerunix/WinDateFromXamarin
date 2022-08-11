@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinDateFrom.Views.AppPage"
+             BackgroundImage="background.jpg">
+    <ContentPage.Content>
+        <Grid x:Name="background">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label x:Name="tbnome" Grid.Row="0" Grid.Column="0" />
+            <Entry x:Name="nome" Grid.Row="0" Grid.Column="1"/>
+            <Label x:Name="tbdata" Grid.Row="1" Grid.Column="0"/>
+            <DatePicker x:Name="data" Grid.Row="1" Grid.Column="1"/>
+            <Button x:Name="calcola" Text="Calcola" Clicked="calcola_Click" Grid.Row="2" Grid.Column="0"/>
+            <Label x:Name="risultato" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text=""/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

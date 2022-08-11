@@ -10,7 +10,7 @@ namespace WinDateFrom.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://github.com/numerunix/WinDateFrom"));
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://github.com/numerunix/WinDateFromXamarin"));
         }
 
         public ICommand OpenWebCommand { get; }

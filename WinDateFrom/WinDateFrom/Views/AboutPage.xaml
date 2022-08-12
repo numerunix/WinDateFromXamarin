@@ -31,7 +31,7 @@
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Label Text="Informazioni" FontSize="Title"/>
                 <Label Text="Autore: Giulio Sorrentino" />
-                <Label Text="Si ringrazia la camionista debugger di IOS Francesca Milano"/>
+                <Label Text="Si ringrazia la debugger di IOS Francesca Milano"/>
                 <Label Text="Licenza: GPL v3 o, secondo il tuo parere, qualsiasi versione successiva" />
                 <Button Margin="0,10,0,0" Text="Informazioni"
                         Command="{Binding OpenWebCommand}"

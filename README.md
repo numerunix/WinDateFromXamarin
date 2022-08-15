@@ -6,6 +6,7 @@ It allows to calculate how many days have passed from a meeting, it saves locall
 #How to install
 
 #The new fashion windows way
+
 ms-windows-store://pdp/?productid=9P681NKNBLSF
 
 https://www.microsoft.com/store/apps/9P681NKNBLSF

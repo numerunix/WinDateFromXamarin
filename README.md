@@ -12,7 +12,7 @@ It allows to calculate how many days have passed from a meeting, it saves locall
 
 # The new fashion google way
 
-[![googl)](e](https://play.google.com/intl/en_us/badges/static/images/badges/it_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.numerone.altervista.windatefrom&gl=IT)
+[![google](https://play.google.com/intl/en_us/badges/static/images/badges/it_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.numerone.altervista.windatefrom&gl=IT)
 
 # The old fashion compiled way
 

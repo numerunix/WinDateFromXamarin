@@ -7,11 +7,7 @@ It allows to calculate how many days have passed from a meeting, it saves locall
 
 # The new fashion windows way
 
-ms-windows-store://pdp/?productid=9P681NKNBLSF
-
-https://www.microsoft.com/store/apps/9P681NKNBLSF
-
-[![microsoft](https://getbadgecdn.azureedge.net/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9P681NKNBLSF)
+[![microsoft](https://getbadgecdn.azureedge.net/images/it-it%20dark.svg)](ms-windows-store://pdp/?productid=9P681NKNBLSF)
 
 
 # The new fashion google way

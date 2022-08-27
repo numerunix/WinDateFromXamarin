@@ -11,6 +11,9 @@ ms-windows-store://pdp/?productid=9P681NKNBLSF
 
 https://www.microsoft.com/store/apps/9P681NKNBLSF
 
+[![microsoft](https://getbadgecdn.azureedge.net/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9P681NKNBLSF)
+
+
 # The new fashion google way
 
 https://play.google.com/store/apps/details?id=org.numerone.altervista.windatefrom&gl=IT

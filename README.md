@@ -17,3 +17,7 @@ It allows to calculate how many days have passed from a meeting, it saves locall
 # The old fashion compiled way
 
 Install visual studio 2022, download the project using git selecting download from existing git repository and then compile it.
+
+# Donations
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H4ZHTFRCETWXG)

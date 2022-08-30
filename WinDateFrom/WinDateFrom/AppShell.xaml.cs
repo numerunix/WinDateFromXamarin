@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Resources;
 using WinDateFrom.ViewModels;
 using WinDateFrom.Views;
 using Xamarin.Forms;

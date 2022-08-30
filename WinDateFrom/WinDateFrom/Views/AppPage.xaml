@@ -2,7 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WinDateFrom.Views.AppPage"
-             BackgroundImage="background.jpg">
+             BackgroundImage="background.jpg"
+             xmlns:local="clr-namespace:WinDateFrom"  
+             xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <system:String x:Uid="Tbnome" x:Key="snome">Nome della persona: </system:String>
+            <system:String x:Uid="Tbdata" x:Key="sdata">Data in cui l'hai incontrata: </system:String>
+            <system:String x:Uid="Calcola" x:Key="scalcola">Calcola</system:String>
+            <system:String x:Key="greetings1">Hai incontrato</system:String>
+            <system:String x:Key="greetings2">circa</system:String>
+            <system:String x:Key="greetings3">giorni fa</system:String>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid x:Name="background">
             <Grid.ColumnDefinitions>
@@ -15,11 +27,11 @@
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Label x:Name="tbnome" Grid.Row="0" Grid.Column="0" TextColor="White" Text="Please enter your name: "/>
-            <Entry x:Name="nome" Grid.Row="0" Grid.Column="1" TextColor="White"/>
-            <Label x:Name="tbdata" Grid.Row="1" Grid.Column="0" TextColor="White" Text="Please enter a date: "/>
+            <Label x:Name="tbnome" Grid.Row="0" Grid.Column="0" Text="{DynamicResource snome}" TextColor="White" />
+            <Entry x:Name="nome" Grid.Row="0" Grid.Column="1"/>
+            <Label x:Name="tbdata" Grid.Row="1" Grid.Column="0" Text="{DynamicResource sdata}" TextColor="White" />
             <DatePicker x:Name="data" Grid.Row="1" Grid.Column="1" TextColor="White"/>
-            <Button x:Name="calcola" Text="Calculate" Clicked="calcola_Click" Grid.Row="2" Grid.Column="0" TextColor="White"/>
+            <Button x:Name="calcola" Text="{DynamicResource scalcola}" Clicked="calcola_Click" Grid.Row="2" Grid.Column="0" TextColor="White"/>
             <Label x:Name="risultato" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="" TextColor="White"/>
         </Grid>
     </ContentPage.Content>

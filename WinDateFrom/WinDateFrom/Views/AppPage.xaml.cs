@@ -23,7 +23,7 @@ namespace WinDateFrom.Views
         {
             DateTime d = DateTime.Now;
             TimeSpan differenza = d - data.Date.Date;
-            risultato.Text = "You meet " + nome.Text + " about " + differenza.Days + " days ago.";
+            risultato.Text = $"{Resources["greetings1"]} {nome.Text} {Resources["greetings2"]} {differenza.Days} {Resources["greetings3"]}";
             Preferences.Set("Data", data.Date.ToString());
             Preferences.Set("Nome", nome.Text);
         }

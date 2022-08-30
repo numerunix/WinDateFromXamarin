@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Resources;
 using WinDateFrom.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -7,11 +8,9 @@ namespace WinDateFrom
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
-
             MainPage = new AppShell();
         }
 

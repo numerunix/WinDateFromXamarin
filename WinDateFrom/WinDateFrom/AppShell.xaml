@@ -3,7 +3,8 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:WinDateFrom.Views"
        Title="WinDateFrom"
-       x:Class="WinDateFrom.AppShell">
+       x:Class="WinDateFrom.AppShell"
+       xmlns:system="clr-namespace:System;assembly=mscorlib">
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
@@ -13,6 +14,8 @@
 
     <Shell.Resources>
         <ResourceDictionary>
+            <system:String x:Uid="Applicazione" x:Key="sapp">Applicazione</system:String>
+            <system:String x:Uid="Informazioni" x:Key="sinfo">Informazioni</system:String>
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
@@ -30,7 +33,7 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent Title="Applications" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:AppPage}" />
-        <ShellContent Title="Informations" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent x:Name="applicazione" Icon="icon_feed.png" Title="{DynamicResource sapp}" ContentTemplate="{DataTemplate local:AppPage}" />
+        <ShellContent x:Name="informazioni" Icon="icon_about.png" Title="{DynamicResource sinfo}" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </TabBar>
 </Shell>

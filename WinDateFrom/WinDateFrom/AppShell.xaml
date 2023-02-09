@@ -14,8 +14,8 @@
 
     <Shell.Resources>
         <ResourceDictionary>
-            <system:String x:Uid="Applicazione" x:Key="sapp">Applicazione</system:String>
-            <system:String x:Uid="Informazioni" x:Key="sinfo">Informazioni</system:String>
+            <system:String x:Uid="Applicazione" x:Key="sapp">Application</system:String>
+            <system:String x:Uid="Informazioni" x:Key="sinfo">Informations</system:String>
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />

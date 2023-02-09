@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WinDateFrom.Views.AboutPage"
              xmlns:vm="clr-namespace:WinDateFrom.ViewModels"
+             BackgroundImageSource="background.jpg"
              Title="{Binding Title}">
     
     <ContentPage.BindingContext>
@@ -29,11 +30,12 @@
         </StackLayout>
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Informazioni" FontSize="Title"/>
-                <Label Text="Autore: Giulio Sorrentino" />
-                <Label Text="Si ringrazia Francesca Milano, la debugger di UWP su XBox"/>
-                <Label Text="Licenza: GPL v3 o, secondo il tuo parere, qualsiasi versione successiva" />
-                <Button Margin="0,10,0,0" Text="Informazioni"
+                <Label Text="Informazioni" FontSize="Title" TextColor="White"/>
+                <Label Text="© Giulio Sorrentino 2023" TextColor="White" />
+                <Label Text="If you give it a name and a date it shows how many time passess from that date" TextColor="White" />
+                <Label Text="Special thanks to Francesca Milano, the mine Xbox UWP Debugger" TextColor="White" />
+                <Label Text="License: GPL v3 or, in your humble opinion, any later version" TextColor="White" />
+                <Button Margin="0,10,0,0" Text="Informations"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Android;
+using Android.App;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Resources;
@@ -6,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
+using Application = Android.App.Application;
 
 namespace WinDateFrom.Views
 {
@@ -38,7 +42,9 @@ namespace WinDateFrom.Views
                 else
                     anniversario.Text = $"{Resources["mesiversario"]}";
             }
-            risultato.Text = $"{Resources["greetings1"]} {nome.Text} {Resources["greetings2"]} {differenza.Days} {Resources["greetings3"]}";
+            String s="";
+            Android.App.Application.Context.Resources.GetIdentifier(s, "about", Application.Context.GetPackageName(BuildConfig.));
+            risultato.Text = $"{Resources["greetings1"]} {nome.Text} {Android.App.Application.Context.Resources.GetString()} {differenza.Days} {Resources["greetings3"]}";
             Preferences.Set("Data", data.Date.ToString());
             Preferences.Set("Nome", nome.Text);
         }

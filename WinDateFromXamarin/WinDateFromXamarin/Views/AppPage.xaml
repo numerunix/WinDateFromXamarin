@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinDateFromXamarin.Views.AppPage"
+             BackgroundImageSource="background.jpg"
+             xmlns:local="clr-namespace:WinDateFromXamarin"  
+             xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <system:String x:Uid="Tbnome" x:Key="snome">Name of the person: </system:String>
+            <system:String x:Uid="Tbdata" x:Key="sdata">Date on which you meet her/him: </system:String>
+            <system:String x:Uid="Calcola" x:Key="scalcola">Calculate</system:String>
+            <system:String x:Key="greetings1">you met</system:String>
+            <system:String x:Key="greetings2">about</system:String>
+            <system:String x:Key="greetings3">days ago</system:String>
+            <system:String x:Key="anniversario">Is your anniversary</system:String>
+            <system:String x:Key="mesiversario">Is your mesiversary</system:String>
+            <system:String x:Key="InvalidValue">Invalid rvalue</system:String>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid x:Name="background">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label x:Name="tbnome" Grid.Row="0" Grid.Column="0" Text="{DynamicResource snome}" TextColor="White" />
+            <Entry x:Name="nome" Grid.Row="0" Grid.Column="1" />
+            <Label x:Name="tbdata" Grid.Row="1" Grid.Column="0" Text="{DynamicResource sdata}" TextColor="White" />
+            <DatePicker x:Name="data" Grid.Row="1" Grid.Column="1" TextColor="White"/>
+            <Button x:Name="calcola" Text="{DynamicResource scalcola}" Clicked="calcola_Click" Grid.Row="2" Grid.Column="0" TextColor="White" Opacity="0.5"/>
+            <Label x:Name="risultato" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="" TextColor="White"/>
+            <Label x:Name="anniversario" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="" TextColor="White" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

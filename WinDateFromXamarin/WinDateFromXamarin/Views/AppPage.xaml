@@ -17,7 +17,18 @@
             <system:String x:Key="mesiversario">Is your mesiversary</system:String>
             <system:String x:Key="InvalidValue">Invalid rvalue</system:String>
         </ResourceDictionary>
-    </ContentPage.Resources>
+        <ResourceDictionary>
+             <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+             </Style>
+             <Style TargetType="DatePicker">
+                 <Setter Property="TextColor" Value="White" />
+             </Style>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+        </ContentPage.Resources>
     <ContentPage.Content>
         <Grid x:Name="background">
             <Grid.ColumnDefinitions>
@@ -31,13 +42,13 @@
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Label x:Name="tbnome" Grid.Row="0" Grid.Column="0" Text="{DynamicResource snome}" TextColor="White" />
+            <Label x:Name="tbnome" Grid.Row="0" Grid.Column="0" Text="{DynamicResource snome}" />
             <Entry x:Name="nome" Grid.Row="0" Grid.Column="1" />
-            <Label x:Name="tbdata" Grid.Row="1" Grid.Column="0" Text="{DynamicResource sdata}" TextColor="White" />
-            <DatePicker x:Name="data" Grid.Row="1" Grid.Column="1" TextColor="White"/>
-            <Button x:Name="calcola" Text="{DynamicResource scalcola}" Clicked="calcola_Click" Grid.Row="2" Grid.Column="0" TextColor="White" Opacity="0.5"/>
-            <Label x:Name="risultato" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="" TextColor="White"/>
-            <Label x:Name="anniversario" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="" TextColor="White" />
+            <Label x:Name="tbdata" Grid.Row="1" Grid.Column="0" Text="{DynamicResource sdata}" />
+            <DatePicker x:Name="data" Grid.Row="1" Grid.Column="1" />
+            <Button x:Name="calcola" Text="{DynamicResource scalcola}" Clicked="calcola_Click" Grid.Row="2" Grid.Column="0" Opacity="0.5"/>
+            <Label x:Name="risultato" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="" />
+            <Label x:Name="anniversario" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

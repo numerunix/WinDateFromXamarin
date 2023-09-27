@@ -1,7 +1,8 @@
 # WinDateFromXamarin
 This product is a version for windows (mobile), android and ios of MicroDateFrom for fitbit.
 
-It allows to calculate how many days have passed from a meeting, it saves locally name and date inserted and no data is stored on any internet database.
+This is the first computer program for woman that is not a videogame.
+It wants to create a new approach method for interpersonal relationships.
 
 [![youtube](https://i9.ytimg.com/vi/FsyTEPodx24/mq2.jpg?sqp=CNTdqpgG&rs=AOn4CLDhPoJbUtECJs0hnhi4ITzF_Q9K5w&retry=4=)](https://youtu.be/FsyTEPodx24)
 
